@@ -1,5 +1,5 @@
-# transparent_proxy_interception
--------------------------------
+# Transparent proxy interception tool
+------------------------------------
 
 ## Purpose
 

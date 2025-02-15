@@ -1,0 +1,1 @@
+udo cat access.log | grep -Eo '([[:alnum:]-]+\.)+[[:alpha:]]{2,}|([0-9]{1,3}\.){3}[0-9]{1,3}' | grep -v '\.json' | sort -u
