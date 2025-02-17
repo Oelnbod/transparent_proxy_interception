@@ -1,1 +1,1 @@
-sudo cat /var/log/squid/access.log | grep -Eo '([[:alnum:]-]+\.)+[[:alpha:]]{2,}|([0-9]{1,3}\.){3}[0-9]{1,3}' | grep -Ev '\.json|\.css|\.png|\.ico|\.js|\.htm|\.xml|\.svg|\.ttf|\.cgi' | sed 's/\www\.//g' | sort -u
+sudo cat /var/log/squid/access.log | grep -Eo '([[:alnum:]-]+\.)+[[:alpha:]]{2,}|([0-9]{1,3}\.){3}[0-9]{1,3}' | grep -Ev '\.json|\.css|\.png|\.ico|\.js|\.htm|\.xml|\.svg|\.ttf|\.cgi' | sed 's/\www\.//g' | sort -u > ordered_log.txt
