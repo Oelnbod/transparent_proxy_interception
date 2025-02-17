@@ -33,3 +33,7 @@ for a list of domains only, as opposed to domains and IP addresses. Use
 log.sh
 ```
 to return a log of IP addresses and domains. 
+To test that it works, you can run
+```console
+curl -x http://localhost:3128 http://example.com
+```
